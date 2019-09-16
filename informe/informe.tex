@@ -1,0 +1,89 @@
+%\title{Reporte ingreso no autorizado sistema eSAMU}
+\documentclass{article}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+%% Sets page size and margins
+\usepackage[letterpaper,top=3.5cm,bottom=2.5cm,left=3cm,right=3cm,marginparwidth=1.75cm, headsep = 70pt]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{booktabs, makecell}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[hang, small,up,textfont=it,up]{caption} 
+\usepackage{fancyhdr}
+\usepackage{authblk}
+\usepackage{csquotes}    %citas
+
+\renewenvironment{quote}
+  {\small\list{}{\rightmargin=3.5cm \leftmargin=3.5cm}%
+   \item\relax}
+  {\endlist}
+  
+
+%cabecera y pies
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\includegraphics[width=0.12\textwidth]{SAMU_e.png}}
+\lhead{
+Reporte ingreso no autorizado sistema eSAMU \\ 
+Dr E. Céspedes, Tecnologías SAMU \\
+SAMU V Región \\
+Agosto 2018}
+\rfoot{P\'agina \thepage}
+
+% titulo documento
+\title{Reporte ingreso no autorizado sistema eSAMU}
+\author[1]{Dr E Céspedes}
+\affil[1]{Tecnologías SAMU Viña del Mar}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+
+\tableofcontents
+
+\section{Introducción}
+El sistema informático utilizado actualmente por el servicio de atención médica de urgencia (SAMU), fue un desarrollo del departamento de informática del Servicio de Salud Viña del Mar Quillota (SSVQ). El sistema es una plataforma diseñada para ser multipropósito, donde están incluídos varios módulos, uno de ellos es específicamente el que presta servios a SAMU en su día a día, llamado eSAMU. eSAMU se encuentra en la web  \url{http://mi.ssvq.cl}, disponible desde cualquier sito con conexión a internet, pero con clave de usuario única y personal.
+
+
+
+\input{./hola1.txt}
+
+\section{Resultados}
+
+
+\begin{table}[h]
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Nombre}} & \multicolumn{1}{c}{\textbf{Cantidad}} & \multicolumn{1}{c}{\textbf{\%}} \\ \midrule
+Andres Exequiel Fuentes Moreno      & 72                                    & 36,92                           \\
+Roberto Andres Valdebenito Paredes  & 42                                    & 21,54                           \\
+Cristian Hernan Meins Lazo          & 42                                    & 21,54                           \\
+Tomas antonio Tapia Vicencio        & 34                                    & 17,44                           \\
+Juan Miguel Espinoza Juarez         & 2                                     & 1,03                            \\
+Daniela Fernanda Olivares Torres    & 2                                     & 1,03                            \\
+Ivan Andres Barahona Morales        & 1                                     & 0,51                            \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusión}
+El 97,4\% de los ingresos es realizado por  los 4 usuarios de funcionarios listados en la tabla de los resultados. Dentro de los usuarios de funcionarios identificados los que tienen 2 y menos accesos se puede tratar como cifra despreciables y sin importancia.
+
+Contrastando la realidad de posible fuga de información desde parte del SAMU, hay que ser cuidadosos al interpretar la información aquí entregada.
+
+
+
+\end{document}
+
