@@ -58,6 +58,7 @@ Agosto 2018}
 El sistema informático utilizado actualmente por el servicio de atención médica de urgencia (SAMU), fue un desarrollo del departamento de informática del Servicio de Salud Viña del Mar Quillota (SSVQ). El sistema es una plataforma diseñada para ser multipropósito, donde están incluídos varios módulos, uno de ellos es específicamente el que presta servios a SAMU en su día a día, llamado eSAMU. eSAMU se encuentra en la web  \url{http://mi.ssvq.cl}, disponible desde cualquier sito con conexión a internet, pero con clave de usuario única y personal.
 
 
+
 Los indicadores
 \begin{enumerate}
 
@@ -66,9 +67,20 @@ Los indicadores
 	\item \emph{Atingencia motivo y submotivo llamada}: Si existe correlación entre el Motivo y submotivo de la llamada y el texto escrito. Se busca encontrar crrelación y concordancia. Indicador se mide en porcentaje.
 	
 	\item \emph{Registro del número telefónico del llamante}: Si existe registro del número de contacto con el solicitante
-
 	\end{enumerate}
+
 \item Regulador
+	\begin{enumerate}
+	\item	\emph{Priorización de los REM cuando tienen indicación de envío de ambulancia}: Busca que las solicitudes estén priorizadas.
+
+	\item 	\emph{Regulación registrada}: Las solicitudes en el sistema eSAMU deben estár con regulación de profesional cuando involucran un paciente
+
+	\item 	\emph{REM cerrados deben quedar claros}: Cuando por alguna razón un REM es cerrado sin seguir las vías usuales, debe quedar claro por que se cerró.
+	\end{enumerate}
+
+
+
+
 
 \end{enumerate}
 Registro inicial Radioopera
@@ -78,23 +90,34 @@ asfva
 
 \section{Resultados}
 
+\subsection{Radiooperador}
 
-\input{../Calidad de registros/Resultados1.txt}
+\input{../calidad_registros/Resultados1_1.txt}
 
 
 \begin{table}[h]
-\begin{tabular}{@{}lcc@{}}
-\toprule
-\multicolumn{1}{c}{\textbf{Nombre}} & \multicolumn{1}{c}{\textbf{Cantidad}} & \multicolumn{1}{c}{\textbf{\%}} \\ \midrule
-Andres Exequiel Fuentes Moreno      & 72                                    & 36,92                           \\
-Roberto Andres Valdebenito Paredes  & 42                                    & 21,54                           \\
-Cristian Hernan Meins Lazo          & 42                                    & 21,54                           \\
-Tomas antonio Tapia Vicencio        & 34                                    & 17,44                           \\
-Juan Miguel Espinoza Juarez         & 2                                     & 1,03                            \\
-Daniela Fernanda Olivares Torres    & 2                                     & 1,03                            \\
-Ivan Andres Barahona Morales        & 1                                     & 0,51                            \\ \bottomrule
-\end{tabular}
+\centering
+\input{../calidad_registros/Tabla1.txt}
+\caption{Nombre de los funcionarios que presentan discordancia entre el texto ingresado y el motivo y submotivo e llamada seleccionado. Se presenta la cantidad de REMs que no cumplen el criterio y el porcentaje de error. Se lista los REM errados para cada uno de ellos.}
 \end{table}
+
+
+\begin{table}[h]
+\centering
+\input{../calidad_registros/Tabla2.txt}
+\caption{Nombre de los funcionarios que presentan mejor correlación entre el texto ingresado y el motivo y submotivo e llamada seleccionado. Se presenta la cantidad de REMs que cumplen el criterio y el porcentaje de acierto.}
+\end{table}
+
+
+
+\input{../calidad_registros/Resultados1_2.txt}
+
+
+\subsection{Regulador}
+
+
+
+
 
 \section{Conclusión}
 El 97,4\% de los ingresos es realizado por  los 4 usuarios de funcionarios listados en la tabla de los resultados. Dentro de los usuarios de funcionarios identificados los que tienen 2 y menos accesos se puede tratar como cifra despreciables y sin importancia.
